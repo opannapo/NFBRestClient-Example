@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Check on your Logcat\nThen filter by 'nfb.restclient'\n to show detail process"
+        android:textColor="#129e2b"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tLabel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Default || param1 param2"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnPostDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="POST DEFAULT"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pPostDefault"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Post Multipart || param1 param2, image Dir"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnPostMultiPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="POST UPLOAD"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pPostMultiPart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Post RAW || Value JSON"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnPostRaw"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="POST RAW"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pPostRaw"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Post Default With Auth || param1, param2, Bearer JWT"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnPostAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="POST AUTH"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pPostAuth"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GET With Param|| param1, param2"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnGetParam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="GET WITH PARAM"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pGetParam"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GET NO PARAM"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnGetNoParam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="GET NO PARAM"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pGetNoParam"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="GET No Param With Auth || Bearer JWT"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10a372">
+
+                <Button
+                    android:id="@+id/btnGetAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="GET AUTH"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/pGetAuth"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:indeterminateDrawable="@drawable/pg"
+                    android:indeterminateDuration="100" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
